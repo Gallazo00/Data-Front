@@ -13,9 +13,10 @@
     "axios": "^1.6.2",
     "chart.js": "^2.9.4",
     "cors": "^2.8.5",
-    "react": "^18.2.0",
+    "react": "^18.0.0",
     "react-chartjs-2": "^2.11.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

@@ -1,20 +1,23 @@
 .grafi {
-    text-align: center;
-    /* Ajusta el tamaño del contenedor según sea necesario */
-    width: 200%;
-    max-width: 1200px; /* Por ejemplo, ajusta según tus preferencias */
-    margin: 0 auto; /* Centra el contenedor */
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  canvas {
-    /* Ajusta el tamaño del lienzo del gráfico según sea necesario */
-    width: 100%;
-    max-width: 800px; /* Por ejemplo, ajusta según tus preferencias */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin: 20px auto;
-  }
-  
+  text-align: center;
+  /* Ajusta el tamaño del contenedor según sea necesario */
+  width: 200%;
+  max-width: 1200px;
+  /* Por ejemplo, ajusta según tus preferencias */
+  margin: 0 auto;
+  /* Centra el contenedor */
+}
+
+h1 {
+  color: #333;
+}
+
+canvas {
+  /* Ajusta el tamaño del lienzo del gráfico según sea necesario */
+  width: 100%;
+  max-width: 800px;
+  /* Por ejemplo, ajusta según tus preferencias */
+  height: auto;
+  /* Permite que la altura se ajuste automáticamente */
+  margin: 20px auto;
+}
