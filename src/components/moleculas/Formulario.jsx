@@ -10,7 +10,7 @@ function Formulario() {
         const data = Object.fromEntries(formData);
 
         try {
-            const response = await fetch('http://127.0.0.1:3000/user', {
+            const response = await fetch('http://44.221.150.42:3000/user', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
