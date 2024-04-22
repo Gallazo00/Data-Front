@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import '../../assets/css/EstilosFormulario.css';
 import LogoRSP from '../../assets/img/LogoRSP.png';
+import DiaEducadora from '../../assets/img/DiaEducadora.png'
 
 function Formulario() {
   const formRef = useRef();
@@ -33,26 +34,28 @@ function Formulario() {
   return (
     <div className="container">
       <div className="form-container">
-        <form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Nombre Completo:</h1>
-          <input type="text" name="NombrePersona" required />
-          <h1>Edad:</h1>
-          <input type="number" name="edad" required />
-          <h1>Número de Teléfono:</h1>
-          <input type="tel" name="numeroTelefono" required />
-          <h1>Usuario de Facebook:</h1>
-          <input type="text" name="UsuFacebook" required />
-          <h1>Sexo:</h1>
-          <select name="sexo" required>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-          </select>
-          <button type="submit">Confirmar</button>
-        </form>
+        <div className="form-content">
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Nombre Completo:</h1>
+            <input type="text" name="NombrePersona" required />
+            <h1>Edad:</h1>
+            <input type="number" name="edad" required />
+            <h1>Número de Teléfono:</h1>
+            <input type="tel" name="numeroTelefono" required />
+            <h1>Usuario de Facebook:</h1>
+            <input type="text" name="UsuFacebook" required />
+            <h1>Sexo:</h1>
+            <select name="sexo" required>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+            </select>
+            <button type="submit">Confirmar</button>
+          </form>
+        </div>
       </div>
 
       <div className="logos-section">
-        <img src={LogoRSP} alt="Logo RSP" />
+        <img src={DiaEducadora} alt="Logo RSP" />
       </div>
     </div>
   );
