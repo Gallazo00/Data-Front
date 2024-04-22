@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import '../../assets/css/EstilosFormulario.css';
-import LogoRSP from '../../assets/img/LogoRSP.png';
 import LogoMorena from '../../assets/img/LogoMorena.png'
 
 function Formulario() {
