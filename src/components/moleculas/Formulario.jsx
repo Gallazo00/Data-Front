@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Swal from 'sweetalert2';
 import '../../assets/css/EstilosFormulario.css';
 import LogoRSP from '../../assets/img/LogoRSP.png';
 import DiaEducadora from '../../assets/img/DiaEducadora.png'
@@ -12,7 +13,7 @@ function Formulario() {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('http://44.221.150.42:3000/user', {
+      const response = await fetch('http://44.223.245.20:3000/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -24,8 +25,15 @@ function Formulario() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const json = await response.json();
-      console.log(json);
+      const textResponse = await response.text(); // Leer la respuesta como texto
+      console.log(textResponse); // Log de la respuesta
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Usuario registrado ',
+        text: textResponse // Usar la respuesta del servidor en la alerta
+      });
+
     } catch (error) {
       console.error('Error al enviar el formulario:', error);
     }
