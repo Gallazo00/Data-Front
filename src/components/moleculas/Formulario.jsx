@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import '../../assets/css/EstilosFormulario.css';
 import LogoRSP from '../../assets/img/LogoRSP.png';
+import LogoMorena from '../../assets/img/LogoMorena.png'
 
 function Formulario() {
   const formRef = useRef();
@@ -52,7 +53,7 @@ function Formulario() {
       </div>
 
       <div className="logos-section">
-        <img src={LogoRSP} alt="Logo RSP" />
+        <img src={LogoMorena} alt="Logo RSP" />
       </div>
     </div>
   );

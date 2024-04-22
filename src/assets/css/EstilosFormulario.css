@@ -29,6 +29,7 @@ form {
 .logos-section {
   text-align: center;
   margin-top: 20px;
+  margin-left: 40px;
 }
 
 .logos-section img {
@@ -57,7 +58,7 @@ select {
 
 button {
   margin-top: 10px;
-  background-color: #c82039;
+  background-color: #b5271d;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -68,11 +69,15 @@ button {
 }
 
 button:hover {
-  background-color: #c82039;
+  background-color: #b5271d;
 }
 
 @media only screen and (max-width: 600px) {
   .form-container {
     max-width: 300px;
+  }
+  
+  .logos-section{
+    margin-left: 0px;
   }
 }
