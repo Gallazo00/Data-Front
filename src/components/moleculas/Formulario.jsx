@@ -57,7 +57,7 @@ function Formulario() {
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
             </select>
-            <button type="submit">Confirmar</button>
+            <button type="submit">Confirmar </button>
           </form>
         </div>
       </div>
