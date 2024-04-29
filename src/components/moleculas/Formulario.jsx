@@ -13,7 +13,7 @@ function Formulario() {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('http://44.223.245.20:3000/user', {
+      const response = await fetch('http://54.164.53.240:3000/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -34,6 +34,7 @@ function Formulario() {
         text: textResponse // Usar la respuesta del servidor en la alerta
       });
 
+      formRef.current.reset();
     } catch (error) {
       console.error('Error al enviar el formulario:', error);
     }

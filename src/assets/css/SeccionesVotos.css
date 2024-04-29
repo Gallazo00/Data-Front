@@ -21,3 +21,12 @@ canvas {
   /* Permite que la altura se ajuste automáticamente */
   margin: 20px auto;
 }
+
+
+.TextWinnner {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+
